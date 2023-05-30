@@ -1,10 +1,10 @@
-﻿namespace FactoryPattern
-{
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿using System.ComponentModel;
+
+using FactoryPattern;
+
+
+
+
+var car = VehicleFactory.GetVehicle(2);
+
+car.Drive();
